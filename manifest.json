@@ -1,14 +1,19 @@
 {
 
 "name":"JotDown",
-"description":"Jote down notes with page timer.",
+"description":"Jote down notes which is integrated with web page usage time tracker.",
 "version":"1.0",
 
 "manifest_version":2,
 
 "browser_action": {
- "default_icon":"icon.png",
- "default_popup":"popup.html"
+
+ "default_popup":"popup.html",
+ "default_icon": {
+      "16": "icon.png",
+      "19": "browser-action-19.png",
+      "38": "browser-action-38.png"
+    }
 },
 
  "icons": {
@@ -18,9 +23,21 @@
 },
 
 "permissions": [
- "management","cookies"
+ "management",
+ "cookies",
+ "tabs"
    
-]
+],
+
+"background": {
+    "scripts": [
+      "common.js",
+      "background.js"
+      ],
+    "persistent": true
+  },
+  
+"options_page": "options.html"
 
 
 
