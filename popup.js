@@ -1,6 +1,3 @@
-
-
-
 var tabId_re = /tabId=([0-9]+)/;
 var match = tabId_re.exec(window.location.hash);
 if (match) {
