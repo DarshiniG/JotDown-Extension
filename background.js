@@ -1,5 +1,3 @@
-
-
 var History = {};
 
 chrome.browserAction.setBadgeText({ 'text': '?'});
@@ -60,3 +58,4 @@ setInterval(UpdateBadges, 1000);
 chrome.tabs.onUpdated.addListener(HandleUpdate);
 chrome.tabs.onRemoved.addListener(HandleRemove);
 chrome.tabs.onReplaced.addListener(HandleReplace);
+
