@@ -14,3 +14,4 @@ assert.strictEqual(common.FormatDuration(7199499), "1:59");
 assert.strictEqual(common.FormatDuration(7200000), "2:00");
 
 console.log("All tests passed");
+ 
